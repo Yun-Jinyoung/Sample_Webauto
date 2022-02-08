@@ -25,10 +25,6 @@ def createFolder(directory):
 
 
 # BoneAge Test Info
-BA_SITE = 'boneage-beta.vunomed.com'
-BA_ID = 'vunotest01@vuno.co'
-BA_PW = 'Vuno!X(8{GzK'
-BA_PW_change = 'Vuno!X(8{GzKchange'
 
 
 # For Call by reference / window 스위치 시에는 함수 인자로 driver값을 넘길 때 reference를 넘겨야 정상동작 했는데
@@ -85,19 +81,9 @@ Reset_Init_Value_data = []
 
 
 
-#Mypage Logo image 파일
-Logo_img_VUNO = 'Vuno_Logo.png'
-Logo_img_other = 'Talk_Logo.png'
-
 # Test Version check
 BA_AUTO_TEST = ' ====== BA_AUTO_TEST Ver.2021-06-01-A ====== '
 
-# Mouse function local var
-sizeY = 0
-ResolutionX = 0
-ResolutionY = 0
-Move_position = 0
-Mouse_Speed = 0.5
 
 VUNO_CREDIT = 0
 BA_1ST = []
