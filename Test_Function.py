@@ -11,7 +11,7 @@ import WebControl_Function as WCF
 
 def Open_Test_Page(driver, logger):
     try:
-        driver.get('file:///D:/Project_y/Sample_Webauto/main.html')
+        driver.get('file:///c:/Sample_Webauto/main.html')
         Init_browse_check = 0
     except Exception as inst:
         Init_browse_check = -1
@@ -74,9 +74,11 @@ def Negative_Login_Test(driver, logger):
 
 def F_Msg_Type(driver, logger):
     WCF.Excel_Load_Dataset(logger, g_Const.Msg_Type_Excel_Fname, g_Const.Msg_Type_data, 'Msg_Type')
+    WCF.Ele_Btn_Click(driver, logger, By.ID, 'sendTypeSms', 'value')
 
     for Column_data in g_Const.Msg_Type_data:
-        WCF.Element_Input(driver, logger, By.XPATH, 'Xpath_value', str(Column_data[1]), 'E-Mail')
+        WCF.Element_Input(driver, logger, By.ID, 'sendTypeSms', '1','value')
+        # WCF.Element_Input(driver, logger, By.NAME, 'n', str(Column_data[1]), 'E-Mail')
         logger.info('F_Msg_Type')
 
 def F_AD_Message(driver, logger):

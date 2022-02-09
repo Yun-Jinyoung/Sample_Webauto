@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
-import g_Const as g_const
+import g_Const
 import pywinauto
 import pyautogui
 from openpyxl import load_workbook
@@ -20,7 +20,7 @@ import sys
 # Wait Click
 def Ele_Btn_Click(driver, logger, e_type,element_value, obj_text):
     try:
-        time.sleep(2)
+        time.sleep(1)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((e_type, element_value)))
         if obj_text.find('panel_type'):
             WebDriverWait(driver, 10).until(EC.element_to_be_clickable((e_type, element_value)))
@@ -44,6 +44,17 @@ def Ele_Just_Wait(driver, logger, e_type,element_value, obj_text):
 def Input_Clear(WebElement):
     while WebElement.get_attribute('value') != '' : WebElement.send_keys(Keys.BACKSPACE)
 
+# Select Radio Button
+def Element_Input(driver, logger, e_type ,element_value, Input_value, obj_text):
+    try:
+        time.sleep(1)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((e_type, element_value)))
+        WebDriverWait(driver, 5).until(EC.element_to_be_clickable((e_type, element_value)))
+        Input_Clear(driver.find_element(e_type, element_value))
+        driver.find_element(e_type, element_value).send_keys(Input_value)
+
+    except Exception as inst:
+        logger.error("[ Failed ] " + obj_text + str(inst))
 
 # Wait Clear Input
 def Element_Input(driver, logger, e_type ,element_value, Input_value, obj_text):
@@ -104,19 +115,19 @@ def Excel_Load_Dataset(logger, Excel_filename, Dataset, obj_text):
 
 def Popup_text(title_text, btn_text ):
     def select_btn(Menu_text):
-        g_const.Select_Menu = Menu_text
+        g_Const.Select_Menu = Menu_text
         window.destroy()
 
     window = tkinter.Tk()
     window.title(title_text)
-    window.geometry("540x900+1600+600")
+    window.geometry("440x650+700+50")
     window.resizable(False, False)
 
     if btn_text == 'Full test' :
         popup_pnl   = tkinter.Button(window, relief="solid", background='SkyBlue1', cursor='hand2', width=40, height=2, text=btn_text, command=lambda:select_btn('Full test'))
         popup_pnl.pack(expand=True)
 
-        popup_pnl_a = tkinter.Button(window, relief="solid", background='khaki1', cursor='hand2', width=40, height=2, text="Open Log Folder", command=lambda: os.startfile(g_const.DCM_FILE_PATH) )
+        popup_pnl_a = tkinter.Button(window, relief="solid", background='khaki1', cursor='hand2', width=40, height=2, text="Open Log Folder", command=lambda: os.startfile(g_Const.DCM_FILE_PATH) )
         popup_pnl_a.pack(expand=True)
 
         popup_pnl1 = tkinter.Button(window, relief="solid",  background='seashell2', cursor='hand2', width=30, text='발송 유형', command=lambda:select_btn('Msg_Type'))
@@ -145,9 +156,10 @@ def Popup_text(title_text, btn_text ):
         window.mainloop()
 
     else :
-        popup_pnl   = tkinter.Button(window, relief="solid", background='SkyBlue1', cursor='hand2', width=40, height=2, text=btn_text, command=lambda:window.destroy)
+        # popup_pnl   = tkinter.Button(window, relief="solid", background='SkyBlue1', cursor='hand2', width=40, height=2, text=btn_text, command=lambda:window.destroy)
+        popup_pnl   = tkinter.Button(window, relief="solid", background='SkyBlue1', cursor='hand2', width=40, height=2, text=btn_text, command=lambda:sys.exit("Quit"))
         popup_pnl.pack(expand=True)
-        popup_pnl_a = tkinter.Button(window, relief="solid", background='khaki1', cursor='hand2', width=40, height=2, text="Open Log Folder", command=lambda: os.startfile(g_const.DCM_FILE_PATH) )
+        popup_pnl_a = tkinter.Button(window, relief="solid", background='khaki1', cursor='hand2', width=40, height=2, text="Open Log Folder", command=lambda: os.startfile(g_Const.DCM_FILE_PATH) )
         popup_pnl_a.pack(expand=True)
 
         window.protocol("WM_DELETE_WINDOW", lambda: sys.exit("종료"))

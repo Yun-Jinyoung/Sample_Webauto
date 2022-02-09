@@ -40,8 +40,6 @@ if __name__ == '__main__':
     driver.maximize_window()
 
     g_Const.Driver_List.append(driver)
-    g_Const.ResolutionX = GetSystemMetrics(0)
-    g_Const.ResolutionY = GetSystemMetrics(1)
     #---------------------------------------
 
     TF.Open_Test_Page(driver, logger)
@@ -73,7 +71,7 @@ if __name__ == '__main__':
         if g_Const.Select_Menu == 'Recv_Num':
             TF.F_Recv_Num(driver, logger)
         if g_Const.Select_Menu == 'Send':
-            TF.F_Send(driver, logger)
+            TF.F_Sending(driver, logger)
         if g_Const.Select_Menu == 'Reset_Init_Value':
             TF.F_Reset_Init_Value(driver, logger)
         if g_Const.Select_Menu == 'Quit':
