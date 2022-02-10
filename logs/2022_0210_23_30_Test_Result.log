@@ -1,0 +1,31 @@
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:51,129 - INFO|[34]|:  
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:51,130 - INFO|[35]|: ====== TEST_log ====== 
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:51,130 - INFO|[36]|: ========== -----  TEST START  ----- ========== 
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:54,684 - INFO|[26]|:F_Msg_Type sendTypeSms Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:56,760 - INFO|[26]|:F_Msg_Type sendTypeMms Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:57,773 - INFO|[29]|:F_Msg_Type End
+[ NHN SOFT MISSION ] - 2022-02-10 23:30:58,843 - INFO|[36]|:F_AD_Message adN Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:00,899 - INFO|[36]|:F_AD_Message adY Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:02,956 - INFO|[36]|:F_AD_Message smsWarningNotice Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:05,009 - INFO|[36]|:F_AD_Message adN Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:07,058 - INFO|[36]|:F_AD_Message adY Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:09,104 - INFO|[36]|:F_AD_Message smsWarningNotice Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:10,152 - INFO|[44]|:F_Send_Num  01012341234 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:11,231 - INFO|[53]|:F_Schedule_Send_Msg  2022-01-01  01:07 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:12,281 - INFO|[53]|:F_Schedule_Send_Msg  2022-02-02  01:07 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:13,334 - INFO|[53]|:F_Schedule_Send_Msg  2022-03-03  05:27 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:14,386 - INFO|[53]|:F_Schedule_Send_Msg  2022-04-09  13:07 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:15,444 - INFO|[53]|:F_Schedule_Send_Msg  2022-08-21  11:07 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:16,499 - INFO|[53]|:F_Schedule_Send_Msg  2022-11-10  10:30 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:17,545 - INFO|[61]|:F_Attach_File  C:/Sample_Webauto/img/1.png Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:18,570 - INFO|[61]|:F_Attach_File  C:/Sample_Webauto/img/2.jpg Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:19,592 - INFO|[61]|:F_Attach_File  C:/Sample_Webauto/img/3.jpeg Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:21,766 - INFO|[75]|:F_Msg_subject_And_content   Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:22,856 - INFO|[75]|:F_Msg_subject_And_content  MMS제목을 입력 합니다. Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:23,929 - INFO|[84]|:F_Recv_Num  1234567890123450 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:24,974 - INFO|[84]|:F_Recv_Num  01099999999 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:26,014 - INFO|[84]|:F_Recv_Num  01030000000 Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:28,069 - INFO|[89]|:F_Send Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:31,276 - INFO|[105]|:F_Reset_Init_Value Click
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:42,278 - INFO|[110]|:F_Quit
+[ NHN SOFT MISSION ] - 2022-02-10 23:31:42,278 - INFO|[80]|: ========== -----  TEST END  ----- ========== 

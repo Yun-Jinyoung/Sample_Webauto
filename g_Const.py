@@ -82,16 +82,6 @@ Reset_Init_Value_data = []
 TEST_log = ' ====== TEST_log ====== '
 
 
-VUNO_CREDIT = 0
-BA_1ST = []
-BA_2ND = []
-BA_3TH = []
-BA_RESULT = ''
-
-SAVE_1ST = []
-SAVE_2ND = []
-SAVE_3TH = []
-
 #Test Menu Select
 Select_Menu = 'Full test'
 

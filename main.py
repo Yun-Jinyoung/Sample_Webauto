@@ -19,7 +19,7 @@ if __name__ == '__main__':
     #-----------------------------------------
 
     #----- Init logger
-    logger = logging.getLogger("[ Bone Age ]")
+    logger = logging.getLogger("[ NHN SOFT MISSION ]")
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(name)s - %(asctime)s - %(levelname)s|[%(lineno)d]|:%(message)s')
 
