@@ -74,19 +74,19 @@ def Negative_Login_Test(driver, logger):
 
 def F_Msg_Type(driver, logger):
     WCF.Excel_Load_Dataset(logger, g_Const.Msg_Type_Excel_Fname, g_Const.Msg_Type_data, 'Msg_Type')
-    WCF.Ele_Btn_Click(driver, logger, By.ID, 'sendTypeSms', 'value')
 
     for Column_data in g_Const.Msg_Type_data:
-        WCF.Element_Input(driver, logger, By.ID, 'sendTypeSms', '1','value')
-        # WCF.Element_Input(driver, logger, By.NAME, 'n', str(Column_data[1]), 'E-Mail')
-        logger.info('F_Msg_Type')
+        WCF.Ele_Btn_Click(driver, logger, By.ID, str(Column_data[1]), 'value')
+        logger.info('F_Msg_Type '+ str(Column_data[1]) + ' Click')
+        time.sleep(1)
 
 def F_AD_Message(driver, logger):
     WCF.Excel_Load_Dataset(logger, g_Const.AD_Message_Excel_Fname, g_Const.AD_Message_data, 'AD_Message')
 
     for Column_data in g_Const.AD_Message_data:
-        WCF.Element_Input(driver, logger, By.XPATH, 'Xpath_value', str(Column_data[1]), 'E-Mail')
-        logger.info('F_AD_Message')
+        WCF.Ele_Btn_Click(driver, logger, By.ID, str(Column_data[1]), 'value')
+        logger.info('F_AD_Message '+ str(Column_data[1]) + ' Click')
+        time.sleep(1)
 
 def F_Send_Num(driver, logger):
     WCF.Excel_Load_Dataset(logger, g_Const.Send_Num_Excel_Fname, g_Const.Send_Num_data, 'Send_Num')

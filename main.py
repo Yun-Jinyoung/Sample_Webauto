@@ -32,7 +32,7 @@ if __name__ == '__main__':
     #----------------
 
     logger.info("  ")
-    logger.info(g_Const.BA_AUTO_TEST)
+    logger.info(g_Const.TEST_log)
     logger.info(" ========== -----  TEST START  ----- ========== ")
 
     #----- Chrome Browser Init

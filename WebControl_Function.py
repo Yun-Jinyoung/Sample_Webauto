@@ -95,7 +95,7 @@ def window_fileopen(logger, Full_Path_Filename):
 def Excel_Load_Dataset(logger, Excel_filename, Dataset, obj_text):
     try:
         # excel load
-        load_wb = load_workbook('./Excel/' + Excel_filename , data_only=True)
+        load_wb = load_workbook('./excel/' + Excel_filename , data_only=True)
         load_ws = load_wb['Sheet1']
 
         excel_init_count=0

@@ -36,7 +36,7 @@ Driver_List = []
 # Set Path
 Current_PATH = os.getcwd()
 
-DCM_FILE_PATH = "C:\qayjy"
+DCM_FILE_PATH = "C:\Sample_Webauto"
 search_fname_set = []
 search(DCM_FILE_PATH)
 DCM_FILE_NAME = search_fname_set
@@ -82,7 +82,7 @@ Reset_Init_Value_data = []
 
 
 # Test Version check
-BA_AUTO_TEST = ' ====== BA_AUTO_TEST Ver.2021-06-01-A ====== '
+TEST_log = ' ====== TEST_log ====== '
 
 
 VUNO_CREDIT = 0
