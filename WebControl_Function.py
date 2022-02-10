@@ -142,7 +142,7 @@ def Popup_text(title_text, btn_text ):
         popup_pnl5.pack(expand=True)
         popup_pnl6 = tkinter.Button(window, relief="solid",  background='seashell2', cursor='hand2', width=30, text='메시지 제목과 내용', command=lambda:select_btn('Msg_subject_And_content'))
         popup_pnl6.pack(expand=True)
-        popup_pnl7 = tkinter.Button(window, relief="solid",  background='seashell2', cursor='hand2', width=30, text='수신자 번호', command=lambda:select_btn('Rec_Num'))
+        popup_pnl7 = tkinter.Button(window, relief="solid",  background='seashell2', cursor='hand2', width=30, text='수신자 번호', command=lambda:select_btn('Recv_Num'))
         popup_pnl7.pack(expand=True)
         popup_pnl8 = tkinter.Button(window, relief="solid",  background='seashell2', cursor='hand2', width=30, text='보내기', command=lambda:select_btn('Send'))
         popup_pnl8.pack(expand=True)

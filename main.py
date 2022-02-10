@@ -52,7 +52,7 @@ if __name__ == '__main__':
         TF.F_Attach_File(driver, logger)
         TF.F_Msg_subject_And_content(driver, logger)
         TF.F_Recv_Num(driver, logger)
-        TF.F_Send(driver, logger)
+        TF.F_Sending(driver, logger)
         TF.F_Reset_Init_Value(driver, logger)
         TF.F_Quit(driver, logger)
     else:

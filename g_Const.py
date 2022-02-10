@@ -68,9 +68,6 @@ Msg_subject_And_content_data = []
 Recv_Num_Excel_Fname= "Recv_Num.xlsx"
 Recv_Num_data = []
 
-Sending_Excel_Fname= "Send_Excel.xlsx"
-Sending_data = []
-
 Reset_Init_Value_Excel_Fname= "Reset_Init_Value.xlsx"
 Reset_Init_Value_data = []
 
